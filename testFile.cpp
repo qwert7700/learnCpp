@@ -11,6 +11,6 @@ int main() {
 
 
 int getUserInput(int x) {
-    
-    return 
+
+    return 0 ;
 }
