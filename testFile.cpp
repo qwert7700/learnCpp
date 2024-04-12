@@ -1,16 +1,28 @@
+// 2_4_functionDouble.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
 
-int main() {
+#include "pch.h"
+#include <iostream>
 
-    int a ;
+int getUserInput() {
 
-    int b ;
+    int num{};
+    std::cout << "Please enter a number: ";
+    std::cin >> num;
 
+    return num;
+}
 
-    return 0 ;
-} 
+void doubleNumber(int num) {
+    std::cout << num * 2 << '\n';
+}
+int main()
+{
+    /*Option 1 */
+    //int num{ getUserInput() }
+    //doubleNumber(num);
 
-
-int getUserInput(int x) {
-
-    return 0 ;
+    /*Option 2 */
+    // doing it this way is more concise but also makes it slighty less understandable
+    doubleNumber(getUserInput());
 }
