@@ -1,0 +1,16 @@
+// 2_8_quizSeperateFilesFunctions.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <iostream>
+
+int getInteger();
+
+int main()
+{
+	int x{ getInteger() };
+	int y{ getInteger() };
+
+	std::cout << x << " + " << y << " is " << x + y << '\n';
+	return 0;
+}
