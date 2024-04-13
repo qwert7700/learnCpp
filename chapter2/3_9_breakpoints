@@ -1,0 +1,24 @@
+// 3_9_breakpoints.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <iostream>
+
+void a()
+{
+	std::cout << "a() called\n";
+}
+
+void b()
+{
+	std::cout << "b() called\n";
+	a();
+}
+
+int main()
+{
+	a();
+	b();
+
+	return 0;
+}
