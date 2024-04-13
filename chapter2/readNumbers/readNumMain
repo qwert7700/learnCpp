@@ -1,0 +1,13 @@
+// 2_x_main.cpp : This file contains the 'main' function. Program execution begins and ends there.
+
+
+#include "pch.h"
+#include "io.h"
+
+int main()
+{
+    int i1{ readNumber() };
+    int i2{ readNumber() };
+
+    writeAnswer(i1 + i2);
+}
