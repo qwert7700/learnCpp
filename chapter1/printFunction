@@ -1,0 +1,15 @@
+#include "pch.h" 
+#include <iostream>
+
+
+void doPrint() {
+    std::cout << "THE PRINT HAS OCCURED\n";
+}
+
+int main() {
+
+    std::cout << "BEFORE THE PRINT\n";
+    doPrint();
+    std::cout << "AFTER THE PRINT\n";
+    return 0;
+}
